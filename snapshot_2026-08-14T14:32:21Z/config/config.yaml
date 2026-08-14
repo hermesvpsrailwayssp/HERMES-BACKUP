@@ -1,0 +1,30 @@
+model:
+  default: newmodles
+  provider: openai-api
+terminal:
+  backend: local
+  cwd: /data/workspace
+  timeout: 180
+compression:
+  enabled: true
+  threshold: 0.85
+command_allowlist:
+  - script execution via heredoc
+  - script execution via -e/-c flag
+onboarding:
+  seen:
+    profile_build_offered: true
+    busy_input_prompt: true
+_config_version: 34
+platforms:
+  telegram:
+    enabled: true
+    home_channel:
+      platform: telegram
+      chat_id: '300115334'
+      name: SINA
+      user_id: '300115334'
+telegram:
+  monitoring_bot_token: 8672994026:***__REDACTED__
+github:
+  backup_token: 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__REDACTED__
