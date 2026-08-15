@@ -25,15 +25,15 @@
       "schedule_display": "0 8 * * *",
       "repeat": {
         "times": null,
-        "completed": 1
+        "completed": 2
       },
       "enabled": true,
       "state": "scheduled",
       "paused_at": null,
       "paused_reason": null,
       "created_at": "2026-08-13T20:01:45.316520+00:00",
-      "next_run_at": "2026-08-15T08:00:00+00:00",
-      "last_run_at": "2026-08-14T08:00:32.042204+00:00",
+      "next_run_at": "2026-08-16T08:00:00+00:00",
+      "last_run_at": "2026-08-15T08:01:25.450036+00:00",
       "last_status": "ok",
       "last_error": null,
       "last_delivery_error": null,
@@ -124,16 +124,16 @@
       "schedule_display": "0 */12 * * *",
       "repeat": {
         "times": null,
-        "completed": 0
+        "completed": 1
       },
       "enabled": true,
       "state": "scheduled",
       "paused_at": null,
       "paused_reason": null,
       "created_at": "2026-08-14T14:32:14.649727+00:00",
-      "next_run_at": "2026-08-15T12:00:00+00:00",
-      "last_run_at": null,
-      "last_status": null,
+      "next_run_at": "2026-08-16T00:00:00+00:00",
+      "last_run_at": "2026-08-15T06:52:27.569828+00:00",
+      "last_status": "ok",
       "last_error": null,
       "last_delivery_error": null,
       "deliver": "telegram",
@@ -145,8 +145,9 @@
         "user_id": "300115334"
       },
       "enabled_toolsets": null,
-      "workdir": null
+      "workdir": null,
+      "fire_claim": null
     }
   ],
-  "updated_at": "2026-08-15T06:46:42.215968+00:00"
+  "updated_at": "2026-08-15T12:00:43.466214+00:00"
 }
