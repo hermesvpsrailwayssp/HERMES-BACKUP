@@ -25,15 +25,15 @@
       "schedule_display": "0 8 * * *",
       "repeat": {
         "times": null,
-        "completed": 7
+        "completed": 8
       },
       "enabled": true,
       "state": "scheduled",
       "paused_at": null,
       "paused_reason": null,
       "created_at": "2026-08-13T20:01:45.316520+00:00",
-      "next_run_at": "2026-08-21T08:00:00+00:00",
-      "last_run_at": "2026-08-20T08:00:46.968168+00:00",
+      "next_run_at": "2026-08-22T08:00:00+00:00",
+      "last_run_at": "2026-08-21T08:00:50.508474+00:00",
       "last_status": "ok",
       "last_error": null,
       "last_delivery_error": null,
@@ -47,56 +47,6 @@
       },
       "enabled_toolsets": null,
       "workdir": null,
-      "fire_claim": null
-    },
-    {
-      "id": "03e1f20614eb",
-      "name": "Game timer - 1h",
-      "prompt": "Send a Telegram message to the user: \"⏱️ Your 1-hour game timer is up! Time to take a break.\" Use the monitoring bot token already configured (telegram.monitoring_bot_token). Just deliver the message, do not ask questions.",
-      "skills": [],
-      "skill": null,
-      "model": null,
-      "provider": null,
-      "provider_snapshot": "openai-api",
-      "model_snapshot": "newmodles",
-      "base_url": null,
-      "script": null,
-      "no_agent": false,
-      "monitor_script": null,
-      "monitor_url": null,
-      "monitor_state": null,
-      "context_from": null,
-      "schedule": {
-        "kind": "once",
-        "run_at": "2026-08-14T11:24:19+00:00",
-        "display": "once at 2026-08-14 11:24"
-      },
-      "schedule_display": "once at 2026-08-14 11:24",
-      "repeat": {
-        "times": 1,
-        "completed": 1
-      },
-      "enabled": false,
-      "state": "completed",
-      "paused_at": null,
-      "paused_reason": null,
-      "created_at": "2026-08-14T10:24:26.685993+00:00",
-      "next_run_at": null,
-      "last_run_at": "2026-08-14T11:31:38.901138+00:00",
-      "last_status": "ok",
-      "last_error": null,
-      "last_delivery_error": null,
-      "deliver": "telegram",
-      "origin": {
-        "platform": "telegram",
-        "chat_id": "300115334",
-        "chat_name": "SINA",
-        "thread_id": null,
-        "user_id": "300115334"
-      },
-      "enabled_toolsets": null,
-      "workdir": null,
-      "run_claim": null,
       "fire_claim": null
     },
     {
@@ -124,15 +74,15 @@
       "schedule_display": "0 */12 * * *",
       "repeat": {
         "times": null,
-        "completed": 12
+        "completed": 13
       },
       "enabled": true,
       "state": "scheduled",
       "paused_at": null,
       "paused_reason": null,
       "created_at": "2026-08-14T14:32:14.649727+00:00",
-      "next_run_at": "2026-08-21T12:00:00+00:00",
-      "last_run_at": "2026-08-20T12:01:14.031358+00:00",
+      "next_run_at": "2026-08-22T00:00:00+00:00",
+      "last_run_at": "2026-08-21T00:01:16.060940+00:00",
       "last_status": "ok",
       "last_error": null,
       "last_delivery_error": null,
@@ -149,5 +99,5 @@
       "fire_claim": null
     }
   ],
-  "updated_at": "2026-08-21T00:00:18.005274+00:00"
+  "updated_at": "2026-08-21T12:00:09.207534+00:00"
 }
