@@ -1,0 +1,103 @@
+{
+  "jobs": [
+    {
+      "id": "021e19c50269",
+      "name": "Portfolio daily update",
+      "prompt": "Run the portfolio valuation script and deliver its Telegram report. Execute: `cd /data/workspace && python3 portfolio_bot.py`. The script already fetches live gold (XAU/USD), silver (XAG/USD), and the free-market USD/Toman rate (AlanChand, with Wallex/Nobitex backups), values the user's gold (27.5g) and silver (62.2g, local Digikala price), and sends the result to Telegram automatically. Just run it and confirm it completed (exit 0 / message sent). Report any failures (e.g. network or API errors) briefly. Do not ask questions.",
+      "skills": [],
+      "skill": null,
+      "model": null,
+      "provider": null,
+      "provider_snapshot": "openai-api",
+      "model_snapshot": "newmodles",
+      "base_url": null,
+      "script": null,
+      "no_agent": false,
+      "monitor_script": null,
+      "monitor_url": null,
+      "monitor_state": null,
+      "context_from": null,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 8 * * *",
+        "display": "0 8 * * *"
+      },
+      "schedule_display": "0 8 * * *",
+      "repeat": {
+        "times": null,
+        "completed": 20
+      },
+      "enabled": true,
+      "state": "scheduled",
+      "paused_at": null,
+      "paused_reason": null,
+      "created_at": "2026-08-13T20:01:45.316520+00:00",
+      "next_run_at": "2026-09-03T08:00:00+00:00",
+      "last_run_at": "2026-09-02T08:00:42.888873+00:00",
+      "last_status": "ok",
+      "last_error": null,
+      "last_delivery_error": null,
+      "deliver": "telegram",
+      "origin": {
+        "platform": "telegram",
+        "chat_id": "300115334",
+        "chat_name": "SINA",
+        "thread_id": null,
+        "user_id": "300115334"
+      },
+      "enabled_toolsets": null,
+      "workdir": null,
+      "fire_claim": null
+    },
+    {
+      "id": "6670d44a01c0",
+      "name": "Hermes backup (every 12h)",
+      "prompt": "Run the backup script to push memory, config (redacted), key workspace files, and cron job definitions to the GitHub repo HERMES-BACKUP. Execute: `cd /data/workspace && export HERMES_BACKUP_TOKEN=\"$(hermes config get github.backup_token | tail -1)\" && bash backup_to_github.sh`. Confirm it committed and pushed (look for \"Pushed backup:\" in output). Report any failures briefly. Do not ask questions.",
+      "skills": [],
+      "skill": null,
+      "model": null,
+      "provider": null,
+      "provider_snapshot": "openai-api",
+      "model_snapshot": "newmodles",
+      "base_url": null,
+      "script": null,
+      "no_agent": false,
+      "monitor_script": null,
+      "monitor_url": null,
+      "monitor_state": null,
+      "context_from": null,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 */12 * * *",
+        "display": "0 */12 * * *"
+      },
+      "schedule_display": "0 */12 * * *",
+      "repeat": {
+        "times": null,
+        "completed": 38
+      },
+      "enabled": true,
+      "state": "scheduled",
+      "paused_at": null,
+      "paused_reason": null,
+      "created_at": "2026-08-14T14:32:14.649727+00:00",
+      "next_run_at": "2026-09-03T12:00:00+00:00",
+      "last_run_at": "2026-09-02T12:02:25.164884+00:00",
+      "last_status": "error",
+      "last_error": "RuntimeError: Model generated invalid tool call: shell",
+      "last_delivery_error": null,
+      "deliver": "telegram",
+      "origin": {
+        "platform": "telegram",
+        "chat_id": "300115334",
+        "chat_name": "SINA",
+        "thread_id": null,
+        "user_id": "300115334"
+      },
+      "enabled_toolsets": null,
+      "workdir": null,
+      "fire_claim": null
+    }
+  ],
+  "updated_at": "2026-09-03T00:00:40.515011+00:00"
+}
